@@ -63,7 +63,7 @@ Follow these instructions to start the full-stack system on your machine:
    ```bash
    npm run dev
    ```
-   *The client runs on [http://localhost:5173](http://localhost:5173)*. Open this URL in your browser.
+   
 
 ---
 

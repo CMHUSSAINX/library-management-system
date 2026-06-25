@@ -1,0 +1,126 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 12px; /* Rounded card */
+  box-shadow: var(--shadow-md); /* Soft shadow */
+  transition: var(--transition-smooth);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--secondary); /* Teal accent bar */
+  opacity: 0;
+  transition: var(--transition-smooth);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg); /* Soft hover shadow */
+  border-color: #cbd5e1;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.genreBadge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #f1f5f9; /* Light Gray */
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--secondary); /* Teal */
+  border: 1px solid var(--border-color);
+}
+
+.body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary); /* Navy Blue */
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.author {
+  font-size: 0.9rem;
+  color: var(--secondary); /* Teal */
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: var(--text-secondary); /* Dark Gray */
+  line-height: 1.5;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.meta {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 12px;
+}
+
+.metaItem {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.metaItem strong {
+  color: var(--text-secondary);
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.adminActions {
+  display: flex;
+  gap: 8px;
+}
+
+.guestNote {
+  display: block;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+  padding: 10px 0;
+  border-top: 1px dashed var(--border-color);
+}

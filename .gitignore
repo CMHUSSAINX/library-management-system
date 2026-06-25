@@ -1,0 +1,27 @@
+# Dependency directories
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Environment variables (Saves database credentials)
+.env
+backend/.env
+frontend/.env.local
+
+# Production build directories
+dist/
+frontend/dist/
+build/
+
+# IDE / Editor logs and configurations
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+
+# Assistant configurations
+.gemini/
